@@ -1,0 +1,137 @@
+<!-- HEADER PRINCIPAL -->
+<ion-header [translucent]="true">
+  <ion-toolbar class="top-toolbar">
+    <ion-buttons slot="start">
+      <ion-button routerLink="/inicio">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Electrónica & Tecnología</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <!-- BOTÓN VOLVER (VISIBLE EN MÓVIL) -->
+  <div class="back-mobile">
+    <ion-button expand="block" routerLink="/inicio">
+      <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
+      Volver a Inicio
+    </ion-button>
+  </div>
+
+  <!-- TITULO -->
+  <div class="page-title">
+    <h2>Nuestros Productos</h2>
+    <p>Encuentra lo mejor en tecnología</p>
+  </div>
+
+  <div class="layout">
+
+    <!-- FILTROS -->
+    <aside class="filters">
+      <h3>Filtrar por</h3>
+
+      <div class="filter-group">
+        <h4>Precio</h4>
+        <ion-range min="0" max="10000" step="10">
+          <ion-label slot="start">$0</ion-label>
+          <ion-label slot="end">$10000</ion-label>
+        </ion-range>
+      </div>
+
+      <div class="filter-group">
+        <h4>Color</h4>
+        <div class="colors">
+          <span class="color black"></span>
+          <span class="color white"></span>
+          <span class="color blue"></span>
+          <span class="color red"></span>
+          <span class="color green"></span>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <h4>Talla</h4>
+        <ion-select placeholder="Seleccionar">
+          <ion-select-option value="unica">Única</ion-select-option>
+        </ion-select>
+      </div>
+    </aside>
+
+    <!-- PRODUCTOS -->
+    <section class="products">
+      <ion-grid>
+        <ion-row>
+
+          <ion-col size="12" size-md="6" size-lg="4">
+            <ion-card class="product-card">
+              <img src="assets/img/tv.png" />
+              <ion-card-content>
+                <h5>Televisor 55” 4K UHD</h5>
+                <p class="price">$782.60</p>
+                <ion-button expand="block">Agregar</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+
+          <ion-col size="12" size-md="6" size-lg="4">
+            <ion-card class="product-card">
+              <img src="assets/img/audifonos.png" />
+              <ion-card-content>
+                <h5>Audífonos Bluetooth</h5>
+                <p class="price">$35.90</p>
+                <ion-button expand="block">Agregar</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+
+          <ion-col size="12" size-md="6" size-lg="4">
+            <ion-card class="product-card">
+              <img src="assets/img/cable.png" />
+              <ion-card-content>
+                <h5>Cable USB Lightning</h5>
+                <p class="price">$12.90</p>
+                <ion-button expand="block">Agregar</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+
+           <ion-col size="12" size-md="6" size-lg="4">
+            <ion-card class="product-card">
+              <img src="assets/img/audifonos.png" />
+              <ion-card-content>
+                <h5>Teclado y mouse Bluetooth* / RF multidispositivo</h5>
+                <p class="price">$43.99</p>
+                <ion-button expand="block">Agregar</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+
+           <ion-col size="12" size-md="6" size-lg="4">
+            <ion-card class="product-card">
+              <img src="assets/img/audifonos.png" />
+              <ion-card-content>
+                <h5>Mouse Bluetooth</h5>
+                <p class="price">$25.99</p>
+                <ion-button expand="block">Agregar</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+
+           <ion-col size="12" size-md="6" size-lg="4">
+            <ion-card class="product-card">
+              <img src="assets/img/audifonos.png" />
+              <ion-card-content>
+                <h5>Repetidor / Router Wi-Fi, 2,4 GHz (B/G/N), hasta 20 m de cobertura</h5>
+                <p class="price">$22.99</p>
+                <ion-button expand="block">Agregar</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </section>
+
+  </div>
+</ion-content>
